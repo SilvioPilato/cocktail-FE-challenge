@@ -26,7 +26,7 @@ export const Glass: React.FC<Props> = ({ingredients}) => {
                                 const animationDelay = animationDuration * (ingredients.length - index - 1);
                                 /** 
                                  * We make a random index so that react will always  
-                                 * recreate the whole divthe animation will always work
+                                 * recreate the whole div and the animation will always work
                                 **/
                                 const elIndex = `${ingredient.name}-${Math.random()}`;
 
