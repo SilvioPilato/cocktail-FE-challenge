@@ -22,3 +22,20 @@
 .cocktail-button:hover {
     color:#00A69F;
 }
+
+@media only screen and (max-width: 1024px) {
+    .cocktails-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        align-content: space-between;
+        column-gap: 0.5rem;
+        row-gap: 0.5rem;
+    }
+
+    .cocktail-button {
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
