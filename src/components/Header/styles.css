@@ -6,3 +6,13 @@
     height: 250px;
     width: auto;
 }
+
+@media only screen and (max-width: 1024px) {
+    .barman-img {
+        height: 120px;
+        width: auto;
+    }
+    .app-title {
+        font-size: 16px;
+    }
+}

@@ -1,5 +1,5 @@
 .glass-wrapper { 
-    height: 350px;
+    height: 320px;
     width: 300px;
 
     clip-path: polygon(10% 10%,
@@ -44,6 +44,13 @@
     transform: scale(0);
 }
 
-.ingredient-text {
+@media only screen and (max-width: 1024px) {
+    .glass-wrapper { 
+        height: 240px;
+        width: 225px;
+    }
 
+    .ingredient-text-wrapper {
+        font-size: 10px;
+    }
 }
