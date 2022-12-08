@@ -28,11 +28,22 @@
     text-align: center;
     font-family: Roboto;
 }
-
 .ingredient-name {
     text-transform: capitalize;
 }
+@keyframes grow {
+    from {transform: scaleY(0);}
+    to {transform: scaleY(1);}
+}
+.ingredient-text-wrapper {
+    font-size: 12px;
+    transform-origin: 0 100%;
+    animation-name: grow;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transform: scale(0);
+}
 
 .ingredient-text {
-    font-size: 12px;
+
 }
