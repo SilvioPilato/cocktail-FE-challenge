@@ -13,7 +13,7 @@ export const CocktailList: React.FC<Props> = ({cocktails, onButtonClick}) => {
         <div className='cocktails-list'>
             {
                 cocktails.map((cocktail) => 
-                    <CocktailButton cocktail={cocktail} onClick={onButtonClick}/>
+                    <CocktailButton key={`${cocktail.name}-button`}  cocktail={cocktail} onClick={onButtonClick}/>
                 )
             }
         </div>
