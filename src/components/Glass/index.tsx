@@ -21,9 +21,9 @@ export const Glass: React.FC<Props> = ({ingredients}) => {
                             ingredients?.map((ingredient, index) => {
                                 const height = `${ingredient.part / totalParts * 100}%`;
                                 const pluralS = ingredient.part != 1 ? "s" : "" ;
-                                const text = `${ingredient.part} part${pluralS} of `;
+                                const text = `${ingredient.part} part${pluralS} of `;  
                                 const animationDuration = 0.5;
-                                const animationDelay = animationDuration * (ingredients.length - index - 1);
+                                const animationDelay = animationDuration * index;
                                 /** 
                                  * We make a random index so that react will always  
                                  * recreate the whole div and the animation will always work

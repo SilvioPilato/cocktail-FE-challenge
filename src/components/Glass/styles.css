@@ -34,6 +34,8 @@
 .glass-ingredients {
     height: 80%;
     width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
     text-align: center;
     font-family: Roboto;
 }
