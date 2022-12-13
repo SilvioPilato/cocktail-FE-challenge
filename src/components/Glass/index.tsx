@@ -7,10 +7,7 @@ export type Props = {
 }
 
 export const Glass: React.FC<Props> = ({ingredients}) => {
-    let totalParts = 0;
-    ingredients?.forEach((value) => {
-        totalParts+=value.part;
-    });
+    const totalParts = ingredients?.reduce((prev, current) => prev +current.part, 0) || 0;
 
     return (
         <div>
